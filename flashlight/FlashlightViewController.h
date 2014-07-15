@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FlashlightViewController.h
 //  flashlight
 //
 //  Created by Derek Briggs on 7/15/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FlashlightViewController : UIViewController
 
 @end
-

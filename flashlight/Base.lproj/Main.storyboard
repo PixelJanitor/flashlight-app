@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6162" systemVersion="14A238h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="14A283o" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6160"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Flashlight View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FlashlightViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,117 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOt-NK-7cQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashlight-white" translatesAutoresizingMaskIntoConstraints="NO" id="EaX-J7-cYM">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="91" y="81" width="57" height="159"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="on-off-white" translatesAutoresizingMaskIntoConstraints="NO" id="z8m-sh-jGG">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="112" y="173" width="16" height="16"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="low-glow" translatesAutoresizingMaskIntoConstraints="NO" id="7Fe-sU-csX">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="101" y="61" width="37" height="7"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mid-glow" translatesAutoresizingMaskIntoConstraints="NO" id="h1T-rF-3Y3">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="92" y="51" width="56" height="9"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="high-glow" translatesAutoresizingMaskIntoConstraints="NO" id="HWN-5H-TSD">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="81" y="41" width="77" height="11"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="XcB-cy-Kv5"/>
+                                    <constraint firstAttribute="height" constant="320" id="mqK-Az-gWv"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="EaX-J7-cYM"/>
+                                        <exclude reference="z8m-sh-jGG"/>
+                                        <exclude reference="7Fe-sU-csX"/>
+                                        <exclude reference="h1T-rF-3Y3"/>
+                                        <exclude reference="HWN-5H-TSD"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="XcB-cy-Kv5"/>
+                                        <exclude reference="mqK-Az-gWv"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="EaX-J7-cYM"/>
+                                        <include reference="z8m-sh-jGG"/>
+                                        <include reference="7Fe-sU-csX"/>
+                                        <include reference="h1T-rF-3Y3"/>
+                                        <include reference="HWN-5H-TSD"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="XcB-cy-Kv5"/>
+                                        <include reference="mqK-Az-gWv"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="lOt-NK-7cQ" secondAttribute="centerX" id="ML6-PK-VYv"/>
+                            <constraint firstAttribute="centerY" secondItem="lOt-NK-7cQ" secondAttribute="centerY" id="bos-v4-0Z7"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lOt-NK-7cQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ML6-PK-VYv"/>
+                                <exclude reference="bos-v4-0Z7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="lOt-NK-7cQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ML6-PK-VYv"/>
+                                <include reference="bos-v4-0Z7"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="flashlightBodyImageView" destination="EaX-J7-cYM" id="70m-NU-q7Z"/>
+                        <outlet property="highGlowImageView" destination="HWN-5H-TSD" id="WXS-t6-5zF"/>
+                        <outlet property="lowGlowImageView" destination="7Fe-sU-csX" id="IuI-nE-9x8"/>
+                        <outlet property="midGlowImageView" destination="h1T-rF-3Y3" id="HbH-mM-aop"/>
+                        <outlet property="switchImageView" destination="z8m-sh-jGG" id="Iyb-K4-uqf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="flashlight-white" width="57" height="159"/>
+        <image name="high-glow" width="77" height="11"/>
+        <image name="low-glow" width="37" height="7"/>
+        <image name="mid-glow" width="56" height="9"/>
+        <image name="on-off-white" width="16" height="16"/>
+    </resources>
 </document>
