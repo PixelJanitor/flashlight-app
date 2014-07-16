@@ -19,7 +19,6 @@
 @property (strong, nonatomic) UIColor *blackColor;
 @property (strong, nonatomic) UIColor *whiteColor;
 
-
 @end
 
 @implementation FlashlightViewController

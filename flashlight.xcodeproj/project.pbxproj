@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47A16F641976C5E1006FD43D /* FlashlightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A16F631976C5E1006FD43D /* FlashlightController.swift */; };
 		47EB121B1975841A00C0BFC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EB121A1975841A00C0BFC6 /* main.m */; };
 		47EB121E1975841A00C0BFC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EB121D1975841A00C0BFC6 /* AppDelegate.m */; };
 		47EB12241975841A00C0BFC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EB12221975841A00C0BFC6 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47A16F631976C5E1006FD43D /* FlashlightController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashlightController.swift; sourceTree = "<group>"; };
 		47EB12151975841A00C0BFC6 /* flashlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flashlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EB12191975841A00C0BFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47EB121A1975841A00C0BFC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				47EB123C197585BC00C0BFC6 /* FlashlightViewController.m */,
 				47EB12251975841A00C0BFC6 /* Images.xcassets */,
 				47EB12181975841A00C0BFC6 /* Supporting Files */,
+				47A16F631976C5E1006FD43D /* FlashlightController.swift */,
 			);
 			path = flashlight;
 			sourceTree = "<group>";
@@ -173,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 47EB12101975841A00C0BFC6 /* Build configuration list for PBXProject "flashlight" */;
+			buildConfigurationList = 47EB12101975841A00C0BFC6 /* Build configuration list for PBXProject "Flashlight" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -219,6 +222,7 @@
 				47EB123D197585BC00C0BFC6 /* FlashlightViewController.m in Sources */,
 				47EB121E1975841A00C0BFC6 /* AppDelegate.m in Sources */,
 				47EB121B1975841A00C0BFC6 /* main.m in Sources */,
+				47A16F641976C5E1006FD43D /* FlashlightController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,12 +339,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = flashlight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -349,6 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = flashlight/Info.plist;
@@ -397,7 +404,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		47EB12101975841A00C0BFC6 /* Build configuration list for PBXProject "flashlight" */ = {
+		47EB12101975841A00C0BFC6 /* Build configuration list for PBXProject "Flashlight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47EB12331975841A00C0BFC6 /* Debug */,
