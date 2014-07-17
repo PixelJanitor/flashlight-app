@@ -12,6 +12,7 @@ import AVFoundation
 
 
 class FlashlightController: UIViewController {
+    
     @IBOutlet var flashlightImage: UIImageView
     @IBOutlet var highGlowImage: UIImageView
     @IBOutlet var midGlowImage: UIImageView
@@ -25,7 +26,7 @@ class FlashlightController: UIViewController {
     let whiteColor = UIColor(red: 1, green:1, blue:1, alpha:1)
     let switchOffset: CGFloat = 17.5
     var tapCount = 0
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let singleFingerTap = UITapGestureRecognizer(target: self, action: "handleSingleTap")
